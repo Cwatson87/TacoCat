@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>APP NAME: Coding Challenge by Cameron Watson</title>
+    <title>TacoCatCoding Challenge by Cameron Watson</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,17 +16,12 @@
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
-    </link>
-</head>
-
-
-
-<body class="d-flex flex-column h-100">
+    <link rel="stylesheet" href="css/prism.css" </link> </head> <body class="d-flex flex-column h-100">
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html"><img src="/img/favicon-32x32.png" width="26" height="24"
-                    class="d-inline-block align-text-top">APP Name</a>
+                    class="d-inline-block align-text-top">TacoCat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,12 +50,29 @@
 
     <main id="content" class="flex-shrink-0">
         <div class="container">
-            <H1>App UI GOES HERE</H1>
-            <form>
-                <input  input id="message" type="text" placeholder="Enter A Message" required>
-                <button id="btnSubmit" type="button" class="btn btn-dark">Normal</button>
-                 <button id="btnSubmit2" type="button" class="btn btn-dark">Sweet Alert</button>
-            </form>
+            <img src="/img/TACOCAT_head.png" class="align-items-lg-center w-25" alt="">
+            <div class="row row-cols-1">
+
+                <div class="col-md-6">
+                    <H1>TacoCat: A Coding Project</H1>
+                    <p> This project outputs a sting and also reverses it!</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5 class="border-bottom border-danger mt-2">Enter a string to reverse</h5>
+                <form class="row gx-3 gy-2">
+                    <div class="col-12">
+                        <input type="text" id="userString" required class="form-control"
+                            placeholder="Enter 2 or more characters" />
+                    </div>
+                    <div class="col-12">
+                        <button type="button" id="btnSubmit" class="btn btn-danger">Reverse!</button>
+                    </div>
+                </form>
+                <hr />
+                <p id="results"></p>
+            </div>
+        </div>
         </div>
     </main>
     <!--footer section-->
@@ -92,10 +104,9 @@
 
     <script src="js/site.js"></script>
     <script>
-        document.getElementById("btnSubmit").addEventListener("click",displayMessage);
-         document.getElementById("btnSubmit2").addEventListener("click",displayMessage2);
+        document.getElementById("btnSubmit").addEventListener("click", getUserString);
     </script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
+    </body>
 
 </html>

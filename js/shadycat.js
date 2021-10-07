@@ -11,7 +11,7 @@ function getUserString() {
     let result = compareStringsA(userString, revString);
 
     //Output Result - separate function
-    displayDataA(result, userString, revString);
+    displayDataB(result, userString, revString);
 
 };
 
